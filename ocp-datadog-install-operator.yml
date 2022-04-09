@@ -37,10 +37,10 @@ spec:
                 kind: OperatorGroup
                 metadata:
                   name: datadog-operator
-                  namespace: openshift-operator
+                  namespace: openshift-operators
                 spec:
                   targetNamespaces:
-                    - openshift-operator
+                    - openshift-operators
 
     - objectDefinition:
         apiVersion: policy.open-cluster-management.io/v1
@@ -56,13 +56,13 @@ spec:
           object-templates:
             - complianceType: musthave
               objectDefinition:
-                apiVersion: operators.coreos.com/v1alphz
+                apiVersion: operators.coreos.com/v1alpha1
                 kind: Subscription
                 metadata:
                   name: datadog-operator
                   namespace: openshift-operator
                 spec:
-                  channel: "4.7"
+                  channel: "alpha"
                   installPlanApproval: Automatic
                   name: datadog-operator
                   source: redhat-operators
