@@ -94,3 +94,4 @@ spec:
   clusterSelector:
     matchExpressions:
       - {key: compliance-operator, operator: In, values: ["dontknow"]}
+      
