@@ -48,7 +48,7 @@ spec:
         metadata:
           name: datadog-operator-subscription
         spec:
-          remediationAction:   enforce
+          remediationAction: enforce
           severity: high
           namespaceSelector:
             exclude: ["kube-*"]
