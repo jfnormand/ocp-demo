@@ -91,6 +91,9 @@ spec:
   clusterConditions:
   - status: "True"
     type: ManagedClusterConditionAvailable
-  # clusterSelector:
-  #   matchExpressions:
-  #     - {key: compliance-operator, operator: In, values: ["dontknow"]}
+  clusterSelector:
+    matchExpressions:
+    - key: jfn
+      operator: In
+      values:
+      - yes
