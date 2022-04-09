@@ -93,7 +93,4 @@ spec:
     type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-    - key: jfn
-      operator: In
-      values:
-      - yes
+      - {key: datadog-operator, operator: In, values: ["installed"]}
