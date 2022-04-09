@@ -70,21 +70,21 @@ spec:
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
 metadata:
-  name: binding-policy-complianceoperator
+  name: binding-policy-compliance-operator
   namespace: acm-policy
 placementRef:
-  name: placement-policy-complianceoperator
+  name: placement-policy-compliance-operator
   kind: PlacementRule
   apiGroup: apps.open-cluster-management.io
 subjects:
-  - name: policy-complianceoperator
+  - name: policy-compliance-operator
     kind: Policy
     apiGroup: policy.open-cluster-management.io
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: placement-policy-complianceoperator
+  name: placement-policy-compliance-operator
   namespace: acm-policy
 spec:
   clusterConditions:
