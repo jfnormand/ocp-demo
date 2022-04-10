@@ -59,14 +59,15 @@ spec:
                 apiVersion: operators.coreos.com/v1alpha1
                 kind: Subscription
                 metadata:
-                  name: datadog-operator
+                  name: datadog-operator-certified-rhmp
                   namespace: openshift-operator
                 spec:
                   channel: "alpha"
                   installPlanApproval: Automatic
-                  name: datadog-operator
-                  source: redhat-operators
+                  name: datadog-operator-certified-rhmp
+                  source: redhat-marketplace
                   sourceNamespace: openshift-marketplace
+                  startingCSV: datadog-operator.v0.7.2
 
 ---
 apiVersion: policy.open-cluster-management.io/v1
