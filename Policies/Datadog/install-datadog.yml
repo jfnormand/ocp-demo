@@ -53,7 +53,7 @@ spec:
         apiVersion: policy.open-cluster-management.io/v1
         kind: ConfigurationPolicy
         metadata:
-          name: datadog-operator-subscription
+          name: datadog-operator-agent
         spec:
           remediationAction: enforce
           severity: high
