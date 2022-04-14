@@ -6,7 +6,7 @@ metadata:
   annotations:
     policy.open-cluster-management.io/categories: DE.CM Security Continuous Monitoring
 spec:
-  remediationAction: enforce
+  remediationAction: inform
   disabled: false
   policy-templates:
     - objectDefinition:
@@ -15,7 +15,7 @@ spec:
         metadata:
           name: datadog-operator-ns
         spec:
-          remediationAction: enforce
+          remediationAction: inform
           severity: high
           object-templates:
             - complianceType: musthave
@@ -30,7 +30,7 @@ spec:
         metadata:
           name: datadog-operator-subscription
         spec:
-          remediationAction: enforce
+          remediationAction: inform
           severity: high
           object-templates:
             - complianceType: musthave
