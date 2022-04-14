@@ -55,7 +55,7 @@ spec:
         metadata:
           name: datadog-operator-agent
         spec:
-          remediationAction: enforce
+          remediationAction: inform
           severity: high
           object-templates:
             - complianceType: musthave
